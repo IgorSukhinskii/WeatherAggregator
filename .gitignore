@@ -141,10 +141,10 @@ packages/*
 !packages/build/
 
 # Exclude Content/ and Script/ since NuGet installs lots of things there
-Content/*
+Content/
 !Content/Site.less
 !Content/Site/
-Scripts/*
+Scripts/
 !Scripts/Site/
 
 # Windows Azure Build Output
