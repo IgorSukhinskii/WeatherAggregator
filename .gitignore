@@ -140,6 +140,13 @@ packages/*
 # (and the packages folder if the line above has been uncommented)
 !packages/build/
 
+# Exclude Content/ and Script/ since NuGet installs lots of things there
+Content/*
+!Content/Site.less
+!Content/Site/
+Scripts/*
+!Scripts/Site/
+
 # Windows Azure Build Output
 csx/
 *.build.csdef
