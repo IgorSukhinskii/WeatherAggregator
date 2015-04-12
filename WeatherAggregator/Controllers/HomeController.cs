@@ -7,11 +7,11 @@ using ForecastIO;
 
 namespace WeatherAggregator.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         public ActionResult Index()
         {
-            return View();
+            return View(dbContext.Cities.ToList());
         }
 
         public ActionResult About()
