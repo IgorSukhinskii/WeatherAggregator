@@ -8,7 +8,7 @@ namespace WeatherAggregator.DAL
     {
 
         public ApplicationDbContext()
-            : base("ApplicationDbContext")
+            : base("ApplicationDbConnection")
         {
         }
 
