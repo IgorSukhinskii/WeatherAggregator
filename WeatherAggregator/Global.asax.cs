@@ -7,7 +7,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace ASP.NET_MVC5_Bootstrap3_3_1_LESS
+namespace WeatherAggregator
 {
     public class MvcApplication : System.Web.HttpApplication
     {

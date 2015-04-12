@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ASP.NET_MVC5_Bootstrap3_3_1_LESS")]
-[assembly: AssemblyDescription("Default ASP.NET MVC5 Template with Bootstrap 3.3.1 LESS")]
+[assembly: AssemblyTitle("WeatherAggregator")]
+[assembly: AssemblyDescription("Web app for aggregating weather from different sources")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Krzysztof Osowicki")]
-[assembly: AssemblyProduct("ASP.NET_MVC5_Bootstrap3_3_1_LESS")]
-[assembly: AssemblyCopyright("Copyright ©  2014")]
+[assembly: AssemblyCompany("Igor Suhinsky")]
+[assembly: AssemblyProduct("WeatherAggregator")]
+[assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

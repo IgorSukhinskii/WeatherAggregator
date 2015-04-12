@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 
-namespace ASP.NET_MVC5_Bootstrap3_3_1_LESS
+namespace WeatherAggregator
 {
     public static class WebApiConfig
     {

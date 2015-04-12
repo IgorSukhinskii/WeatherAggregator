@@ -3,7 +3,7 @@ using BundleTransformer.Core.Orderers;
 using BundleTransformer.Core.Transformers;
 using System.Web.Optimization;
 
-namespace ASP.NET_MVC5_Bootstrap3_3_1_LESS
+namespace WeatherAggregator
 {
     public class BundleConfig
     {
