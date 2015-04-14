@@ -1,0 +1,48 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model WeatherAggregator.Models.CityForecastsVM
+
+@{
+    ViewBag.Title = "Forecasts";
+}
+
+<div class="jumbotron">
+    <h1>ПОГОДА: @Model.City.Name</h1>
+</div>
+
+<div class="row">
+    @foreach (var day in Model.Days)
+    {
+        <div class="col-md-4">
+            <h2>@day.Date.DayOfWeek</h2>
+            @foreach (var tod in WeatherAggregator.Models.TimeOfDayHelper.Times)
+            {
+                
+                <h3>@WeatherAggregator.Models.TimeOfDayHelper.ToString(tod)</h3>
+                if (day.Forecasts.ContainsKey(tod))
+                {
+                    <p>
+                        Температура: @day.Forecasts[tod].TempMin - @day.Forecasts[tod].TempMax
+                    </p>
+                    <p>
+                        Влажность: @day.Forecasts[tod].HumidityMin - @day.Forecasts[tod].HumidityMax
+                    </p>
+                }
+                else
+                {
+                    <p>
+                        Извините, но у нас ещё нет прогнозов на это время.
+                    </p>
+                }
+            }
+        </div>
+    }
+    @if (Model.Days.Count() == 0)
+    {
+        <div class="col-md-12">
+            Похоже, здесь ещё ничего нет. Дайте нам немного времени, и мы соберём для вас прогнозы погоды.
+        </div>
+    }
+</div>

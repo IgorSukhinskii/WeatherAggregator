@@ -1,8 +1,7 @@
-﻿@model IEnumerable<WeatherAggregator.Models.City>
-
-@{
+﻿@{
     ViewBag.Title = "Home Page";
 }
+@model IEnumerable<WeatherAggregator.Models.City>
 
 <div class="jumbotron">
     <h1>ПОГОДА</h1>
@@ -12,11 +11,8 @@
 <div class="row">
     @foreach (var city in Model)
     {
-    <div class="col-md-4">
-        <h2>@city.Name</h2>
-        <p>
-            @city.Lat, @city.Lng
-        </p>
+    <div class="col-md-3">
+        @Html.ActionLink(city.Name, "Forecasts", new RouteValueDictionary { {"Id", city.CityId } })
     </div>
     }
 </div>

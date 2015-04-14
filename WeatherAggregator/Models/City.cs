@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace WeatherAggregator.Models
+﻿namespace WeatherAggregator.Models
 {
     public class City
     {
