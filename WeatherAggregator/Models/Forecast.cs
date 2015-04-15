@@ -5,6 +5,7 @@ namespace WeatherAggregator.Models
     public enum WeatherProviderId
     {
         ForecastIO,
+        WorldWeatherOnline,
         OpenWeatherMap
     }
     public class Forecast

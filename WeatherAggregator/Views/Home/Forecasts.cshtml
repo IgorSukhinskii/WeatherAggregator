@@ -19,7 +19,6 @@
             <h2>@day.Date.DayOfWeek</h2>
             @foreach (var tod in WeatherAggregator.Models.TimeOfDayHelper.Times)
             {
-                
                 <h3>@WeatherAggregator.Models.TimeOfDayHelper.ToString(tod)</h3>
                 if (day.Forecasts.ContainsKey(tod))
                 {
